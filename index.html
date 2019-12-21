@@ -9,6 +9,11 @@
     <!-- Bootstrap Css Dosyası -->
     <link rel="stylesheet" href="_css/bootstrap.min.css">
 
+    <!-- Slider Stilleri-->
+    <link rel="stylesheet" href="slider/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="slider/css/style.css"> <!-- Resource style -->
+	<script src="slider/js/modernizr.js"></script> <!-- Modernizr -->
+
     <!-- Style Dosyalarım -->
     <link rel="stylesheet" href="_css/styles.css">
 
@@ -21,15 +26,72 @@
         <header>
             <div class="topnav" id="myTopnav">
                 <a href="#home"><i class="far fa-eye"></i></a>
-                <a href="#home">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a href="#contact">İletişim</a>
+                <a href="#news">Galeri</a>
+                <a href="#home">Ana Sayfa</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
                 </a>
               </div>
         </header>
+
+        <!-- Slider (S)-->
+        <section class="cd-slider-wrapper">
+            <ul class="cd-slider">
+                <li class="visible">
+                    <div>
+                        <h2>Alp Eren Dursun</h2>
+                        <h3>B181200004</h3>
+                        <p>Bilişim Sistemleri Mühendisliği Bölümü <br>
+                        ISE201 Web Teknolojileri Dersi Ödevi</p>
+                    </div>
+                </li>
+                    
+                <li>
+                    <div>
+                        <h2>Alp Eren Dursun</h2>
+                        <h3>B181200004</h3>
+                        <p>Bilişim Sistemleri Mühendisliği Bölümü <br>
+                        ISE201 Web Teknolojileri Dersi Ödevi</p>
+                    </div>
+                </li>
+    
+                <li>
+                    <div>
+                        <h2>Alp Eren Dursun</h2>
+                        <h3>B181200004</h3>
+                        <p>Bilişim Sistemleri Mühendisliği Bölümü <br>
+                        ISE201 Web Teknolojileri Dersi Ödevi</p>
+                    </div>
+                </li>
+    
+                <li>
+                    <div>
+                        <h2>Alp Eren Dursun</h2>
+                        <h3>B181200004</h3>
+                        <p>Bilişim Sistemleri Mühendisliği Bölümü <br>
+                        ISE201 Web Teknolojileri Dersi Ödevi</p>
+                    </div>
+                </li>
+            </ul> <!-- .cd-slider -->
+        
+            <ol class="cd-slider-navigation">
+                <li class="selected"><a href="#0"></a></li>
+                <li><a href="#0"></a></li>
+                <li><a href="#0"></a></li>
+                <li><a href="#0"></a></li>
+            </ol> <!-- .cd-slider-navigation -->
+            
+            <div class="cd-svg-cover" data-step1="M1402,800h-2V0.6c0-0.3,0-0.3,0-0.6h2v294V800z" data-step2="M1400,800H383L770.7,0.6c0.2-0.3,0.5-0.6,0.9-0.6H1400v294V800z" data-step3="M1400,800H0V0.6C0,0.4,0,0.3,0,0h1400v294V800z" data-step4="M615,800H0V0.6C0,0.4,0,0.3,0,0h615L393,312L615,800z" data-step5="M0,800h-2V0.6C-2,0.4-2,0.3-2,0h2v312V800z" data-step6="M-2,800h2L0,0.6C0,0.3,0,0.3,0,0l-2,0v294V800z" data-step7="M0,800h1017L629.3,0.6c-0.2-0.3-0.5-0.6-0.9-0.6L0,0l0,294L0,800z" data-step8="M0,800h1400V0.6c0-0.2,0-0.3,0-0.6L0,0l0,294L0,800z" data-step9="M785,800h615V0.6c0-0.2,0-0.3,0-0.6L785,0l222,312L785,800z" data-step10="M1400,800h2V0.6c0-0.2,0-0.3,0-0.6l-2,0v312V800z">
+                <svg height='100%' width="100%" preserveAspectRatio="none" viewBox="0 0 1400 800">
+                    <path id="cd-changing-path" d="M1402,800h-2V0.6c0-0.3,0-0.3,0-0.6h2v294V800z"/>
+                </svg>
+            </div> <!-- .cd-svg-cover -->
+        </section> <!-- .cd-slider-wrapper -->
+        <script src="slider/js/jquery-2.1.4.js"></script>
+        <script src="slider/js/snap.svg-min.js"></script>
+        <script src="slider/js/main.js"></script> <!-- Resource jQuery -->
+        <!-- Slider (F)-->
     </main>
     <footer>
         <div class="container">
