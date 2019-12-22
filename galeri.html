@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ISE201 Ödevi</title>
+
+    <!-- Bootstrap Css Dosyası -->
+    <link rel="stylesheet" href="_css/bootstrap.min.css">
+
+    <!-- Slider Stilleri-->
+    <link rel="stylesheet" href="slider/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="slider/css/style.css"> <!-- Resource style -->
+    <script src="slider/js/modernizr.js"></script> <!-- Modernizr -->
+    
+    <!-- Zoom Stili -->
+    <link rel="stylesheet" href="_css/zoomify.css">
+
+    <!-- Style Dosyalarım -->
+    <link rel="stylesheet" href="_css/styles.css">
+
+    <!-- Simgeler İçin Fontawesome Kütüphanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <!-- Sayfaya Özel Stiller -->
+    <style>
+
+        footer {
+            background-color: #81a256;
+        }
+
+        body {
+            background-image: url("./image/galeri_bg.jpg");
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-color: #81a256;
+        }
+        .topnav a:hover {
+            background-color: #81a256;
+            color: white;
+        }
+        .topnav {
+            background-color: rgba(179, 212, 136, .3);
+        }
+
+        main {
+            padding-top: 100px;
+        }
+    </style>
+    <!-- Jquery Kütüphanesi -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <main>
+        <header>
+            <div class="topnav" id="myTopnav">
+                <a href="#home"><i class="far fa-eye"></i></a>
+                <a href="#contact">İletişim</a>
+                <a href="#news">Galeri</a>
+                <a href="#home">Ana Sayfa</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </header>
+
+        <div class="container">
+            <div class="row font1 justify-content-center mb-5">
+                <h1>GALERİMİZ</h1>
+            </div>
+            <div class="row text-center font2 mb-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nisl ex, vehicula vel rutrum eu, aliquet id dui. Quisque accumsan massa id fringilla aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tincidunt lectus, in dignissim elit.</p>
+            </div>
+            <div class="galeriBaslik row align-content-center pt-3 pb-3">
+                <div class="col-sm-2 font3 text-center text-sm-left ">
+                    Resimler
+                </div>
+                <div class="col-sm-10 col-12 mt-3 mt-sm-0">
+                    <ul class="nav nav-pills justify-content-sm-end justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link font2" data-toggle="tab" href="#home">Tüm Resimler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font2" data-toggle="tab" href="#menu1">Menü 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font2" data-toggle="tab" href="#menu2">Menü 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content mt-5">
+                <div class="tab-pane container active" id="home">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3 galeriCol">
+                            <div>
+                                <img src="image/a.jpg" alt="galeri resmi" class="img-thumbnail zoomify">
+                            </div>
+                            <div class="text-center p-4 font4">
+                                Resim 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="menu1">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3 galeriCol">
+                            <div>
+                                <img src="image/a.jpg" alt="galeri resmi">
+                            </div>
+                            <div class="text-center p-4 font4">
+                                Resim 2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="menu2">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3 galeriCol">
+                            <div>
+                                <img src="image/a.jpg" alt="galeri resmi">
+                            </div>
+                            <div class="text-center p-4 font4">
+                                Resim 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center p-4">
+                <div class="col-1">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="col-1">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="col-1">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="col-1">
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Javascript Kodları-->
+    <script src="_js/main.js"></script>
+
+    <!-- Bootstrap Js Dosyası-->
+    <script src="_js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Zoom Javascript Kütüphanesi -->
+    <script src="_js/zoomify.js"></script>
+    <script>
+        $('.container img').zoomify();
+    </script>
+</body>
+</html>
