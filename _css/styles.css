@@ -120,7 +120,11 @@ footer {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
-  
+
+  .galeriCol {
+    margin-bottom: 30px;
+  }
+
   .img-thumbnail {
     padding: 0;
     background:none;
