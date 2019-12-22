@@ -113,6 +113,7 @@ footer {
 
   .galeriCol img {
     max-width: 247.5px;
+    width: 100%;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
     -moz-border-radius-topleft: 5px;
@@ -130,4 +131,26 @@ footer {
     background:none;
     border: none;
   }
+
+  .IForm input, .IForm textarea {
+    background-color: #68a097;
+    color: white;
+    border: none;
+  }
+
+  .IForm input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .IForm textarea {
+    font-size: 16px;
+  }
+
+  .IForm button {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
 
